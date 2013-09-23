@@ -64,7 +64,7 @@ try {
 	    expMetrics.addAll(getMetricsFor(host));
 
 		cal.setTime(startTime);
-		if (cal.get(Calendar.DAY_OF_WEEK) == 6) 
+		if (cal.get(Calendar.DAY_OF_WEEK) == 6) // Skip week-ends
 	    	startTime = startTime = startTime.plus(3);
 	    else 
 	    	startTime = startTime = startTime.plus(1);
@@ -91,5 +91,5 @@ try {
 
 }
 catch(e) {
-	return "No Date Found";
+	return "No Data Found";
 } 
