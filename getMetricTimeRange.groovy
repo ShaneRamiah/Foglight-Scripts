@@ -1,5 +1,5 @@
 // Script to check if there was hits within a specified time slice during business hours. 
-// Can be use if a rule to fire alarms 
+// Can be use in a rule to fire alarms 
 
    def timeSlice = 15 // Set to 15 minutes
    def hitFilterMetric = "hitFilterNameHere"; // Hit Filter metric name
